@@ -1,0 +1,19 @@
+{
+  "name": "find-mr-x-project-page",
+  "version": "0.0.1",
+  "description": "find-mr-x description",
+  "main": "index.js",
+  "authors": {
+    "name": "Friedrich Völkers",
+    "email": "info@friedrichvoelkers.de"
+  },
+  "repository": "www.repo.de/find-mr-x-project-page",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
