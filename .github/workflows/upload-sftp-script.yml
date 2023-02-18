@@ -21,9 +21,9 @@ jobs:
         with:
           host: ${{ secrets.SFTP_HOST }}                  
           username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORDD }}
+          password: ${{ secrets.SFTP_PASSWORD }}
           dryRun: false
           forceUpload: true                         
           localDir: 'dist'                         
-          remoteDir: '/vuetest'                       
+          remoteDir: '/find-mr.x'                       
           exclude: '.git*,.DS_Store'
