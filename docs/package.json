@@ -10,7 +10,7 @@
   "repository": "www.repo.de/find-mr-x-project-page",
   "scripts": {
     "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
