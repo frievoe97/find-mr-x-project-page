@@ -7,15 +7,15 @@ on:
 jobs:
   Upload-to-SFTP:
     runs-on: ubuntu-latest
+    env:
+      working-directory: ./docs
+      
 
     steps:
       - name: 🚚 Get latest code                     
         uses: actions/checkout@v3
 
       - uses: actions/setup-node@v3
-      - name: Change Directory
-        working-directory: ./docs
-        run: cp .docs
       - run: npm install
       - run: npm run build
 
