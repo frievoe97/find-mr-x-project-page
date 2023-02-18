@@ -27,6 +27,6 @@ jobs:
           password: ${{ secrets.SFTP_PASSWORD }}
           dryRun: false
           forceUpload: true                         
-          localDir: 'dist'                         
-          remoteDir: '/find-mr.x'                       
+          localDir: 'docs/src/.vuepress/dist'                         
+          remoteDir: '/find-mr-x'                       
           exclude: '.git*,.DS_Store'
