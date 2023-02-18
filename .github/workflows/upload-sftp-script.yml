@@ -7,11 +7,12 @@ on:
 jobs:
   Upload-to-SFTP:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./docs
-      
+    defaults:
+      run:
+        working-directory: ./docs
 
     steps:
+      - run: pwd
       - name: 🚚 Get latest code                     
         uses: actions/checkout@v3
 
