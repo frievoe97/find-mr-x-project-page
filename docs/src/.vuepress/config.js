@@ -21,6 +21,21 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
+  locales: {
+    // The key is the path for the locale to be nested under.
+    // As a special case, the default locale can use '/' as its path.
+    '/': {
+      lang: 'de-DE', // this will be set as the lang attribute on <html>
+      title: 'VuePress',
+      description: 'Vue-powered Static Site Generator'
+    },
+    '/en/': {
+      lang: 'en-US',
+      title: 'VuePress',
+      description: 'Vue 驱动的静态网站生成器'
+    }
+  },
+
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -32,46 +47,135 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     searchMaxSuggestions: 10,
-    lastUpdated: false,
-    nav: [
-      {
-        text: 'Documentation',
-        link: '/docs/',
+    lastUpdated: true,
+//     nav: [
+//       {
+//         text: 'Documentation',
+//         link: '/docs/',
+//       },
+//       {
+//         text: 'Config',
+//         link: '/config/'
+//       }
+// /*       {
+//         text: 'VuePress',
+//         link: 'https://v1.vuepress.vuejs.org'
+//       } */
+//     ],
+    // sidebar: {
+    //   '/docs/': [
+    //     {
+    //       title: 'Documentation',
+    //       collapsable: false,
+    //       children: [
+    //         // '',
+    //         // 'using-vue',
+    //         // 'guide-section',
+    //         'description',
+    //         'usage',
+    //         'components',
+    //         'tests',
+    //         'future'
+    //       ]
+    //     }
+    //   ],
+    // },
+    locales: {
+      '/': {
+        // text for the language dropdown
+        selectText: 'Sprache',
+        // label for this locale in the language dropdown
+        label: 'Deutsch',
+        // Aria Label for locale in the dropdown
+        ariaLabel: 'Languages',
+        // text for the edit-on-github link
+        editLinkText: 'Edit this page on GitHub',
+        // config for Service Worker
+        serviceWorker: {
+          updatePopup: {
+            message: "New content is available.",
+            buttonText: "Refresh"
+          }
+        },
+        // algolia docsearch options for current locale
+        algolia: {},
+        nav: [
+          {
+            text: 'Documentation',
+            link: '/docs/',
+          },
+          {
+            text: 'Config',
+            link: '/config/'
+          }
+    /*       {
+            text: 'VuePress',
+            link: 'https://v1.vuepress.vuejs.org'
+          } */
+        ],
+        sidebar: {
+          '/docs/': [
+            {
+              title: 'Documentation',
+              collapsable: false,
+              children: [
+                // '',
+                // 'using-vue',
+                // 'guide-section',
+                'description',
+                'usage',
+                'components',
+                'tests',
+                'future'
+              ]
+            }
+          ],
+        },
       },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'Languages',
-        ariaLabel: 'Language Menu',
-        items: [
-          { text: 'German', link: '/language/de/' },
-          { text: 'English', link: '/language/eng/' }
-        ]
+      '/en/': {
+        selectText: 'Languages',
+        label: 'English',
+        editLinkText: '在 GitHub 上编辑此页',
+        serviceWorker: {
+          updatePopup: {
+            message: "发现新内容可用.",
+            buttonText: "刷新"
+          }
+        },
+        nav: [
+          {
+            text: 'Documentation',
+            link: '/en/docs/',
+          },
+          {
+            text: 'Config',
+            link: '/en/docs/'
+          }
+    /*       {
+            text: 'VuePress',
+            link: 'https://v1.vuepress.vuejs.org'
+          } */
+        ],
+        algolia: {},
+        sidebar: {
+          '/en/docs/': [
+            {
+              title: 'Documentation',
+              collapsable: false,
+              children: [
+                // '',
+                // 'using-vue',
+                // 'guide-section',
+                'description',
+                'usage',
+                'components',
+                'tests',
+                'future'
+              ]
+            }
+          ],
+        },
       }
-/*       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      } */
-    ],
-    sidebar: {
-      '/docs/': [
-        {
-          title: 'Documentation',
-          collapsable: false,
-          children: [
-            // '',
-            // 'using-vue',
-            // 'guide-section',
-            'description',
-            'usage',
-            'components',
-            'tests',
-            'future'
-          ]
-        }
-      ],
     }
   },
 
