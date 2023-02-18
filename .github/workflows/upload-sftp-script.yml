@@ -15,6 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
       - name: Change Directory
         working-directory: ./docs
+        run: cp .docs
       - run: npm install
       - run: npm run build
 
