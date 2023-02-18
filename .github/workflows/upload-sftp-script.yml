@@ -12,7 +12,6 @@ jobs:
         working-directory: ./docs
 
     steps:
-      - run: pwd
       - name: 🚚 Get latest code                     
         uses: actions/checkout@v3
 
