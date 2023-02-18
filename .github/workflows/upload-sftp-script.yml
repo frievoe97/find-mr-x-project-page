@@ -1,4 +1,4 @@
-name: Upload the Whatsapp-Dashboard to the server of the subdomain whatsapp-dashboard.friedrichvoelkers.de
+name: Upload the Whatsapp-Dashboard to the server of the subdomain find-mr-x.friedrichvoelkers.de
 
 on:
   push:
