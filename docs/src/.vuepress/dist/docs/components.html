@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Komponenten | VuePress</title>
+    <meta name="generator" content="VuePress 1.9.8">
+    
+    <meta name="description" content="Vue-powered Static Site Generator">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.f6176069.css" as="style"><link rel="preload" href="/assets/js/app.894dbaab.js" as="script"><link rel="preload" href="/assets/js/3.cef735bc.js" as="script"><link rel="preload" href="/assets/js/13.65feb753.js" as="script"><link rel="prefetch" href="/assets/js/10.d160481d.js"><link rel="prefetch" href="/assets/js/11.d39922fd.js"><link rel="prefetch" href="/assets/js/12.dd0f6f2c.js"><link rel="prefetch" href="/assets/js/14.0577ec8e.js"><link rel="prefetch" href="/assets/js/15.9a1add42.js"><link rel="prefetch" href="/assets/js/16.9fd31d2b.js"><link rel="prefetch" href="/assets/js/17.47c24070.js"><link rel="prefetch" href="/assets/js/18.9671af89.js"><link rel="prefetch" href="/assets/js/19.a96da7c9.js"><link rel="prefetch" href="/assets/js/20.9e6ab8b8.js"><link rel="prefetch" href="/assets/js/21.dc95d052.js"><link rel="prefetch" href="/assets/js/22.ec219442.js"><link rel="prefetch" href="/assets/js/23.555fdaa6.js"><link rel="prefetch" href="/assets/js/24.fdcbe4c1.js"><link rel="prefetch" href="/assets/js/25.005c160a.js"><link rel="prefetch" href="/assets/js/26.c0820909.js"><link rel="prefetch" href="/assets/js/27.dfed2c53.js"><link rel="prefetch" href="/assets/js/28.3d60b19a.js"><link rel="prefetch" href="/assets/js/29.e4ef574c.js"><link rel="prefetch" href="/assets/js/30.4c556d4d.js"><link rel="prefetch" href="/assets/js/4.4ab2ce0c.js"><link rel="prefetch" href="/assets/js/5.d3a97334.js"><link rel="prefetch" href="/assets/js/6.b53d6634.js"><link rel="prefetch" href="/assets/js/7.45f57bb2.js"><link rel="prefetch" href="/assets/js/8.dfcc48ca.js"><link rel="prefetch" href="/assets/js/9.314fbee6.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.25c53924.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f6176069.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">VuePress</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Sprache</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Sprache</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/components.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Deutsch
+</a></li><li class="dropdown-item"><!----> <a href="/en/docs/components.html" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link router-link-active">
+  Documentation
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Sprache</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Sprache</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/components.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Deutsch
+</a></li><li class="dropdown-item"><!----> <a href="/en/docs/components.html" class="nav-link">
+  English
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Documentation</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/description.html" class="sidebar-link">Beschreibung der App</a></li><li><a href="/docs/usage.html" class="sidebar-link">Benutzung der App</a></li><li><a href="/docs/components.html" aria-current="page" class="active sidebar-link">Komponenten</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/components.html#model" class="sidebar-link">Model</a></li><li class="sidebar-sub-header"><a href="/docs/components.html#view" class="sidebar-link">View</a></li><li class="sidebar-sub-header"><a href="/docs/components.html#control" class="sidebar-link">Control</a></li></ul></li><li><a href="/docs/tests.html" class="sidebar-link">Tests</a></li><li><a href="/docs/future.html" class="sidebar-link">Aussicht</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="komponenten"><a href="#komponenten" class="header-anchor">#</a> Komponenten</h1> <p>Die App ist nach dem Model-View-Control Modell aufgebaut. Im
+Nachfolgenden werden die einzelnen Komponenten detailliert beschrieben.</p> <h2 id="model"><a href="#model" class="header-anchor">#</a> Model</h2> <p>In dem Model werden alle für das Spiel verwendeten Daten lokal
+gespeichert. Für die Realisierung wird dabei die Klasse
+<code>GlobalState.java</code>{.java} verwendet. Mithilfe des Singleton-Pattern wird
+sichergestellt, dass es von dieser Klasse nicht mehrere Instanzen gibt.
+In dieser Klasse werden folgende Daten gespeichert:</p> <p><strong>Datentyp</strong> <strong>Name</strong> <strong>Beschreibung</strong></p> <hr> <p><code>ArrayList&lt;Message&gt;</code>{.java}                         allMessages        Speichert die Nachrichten aller Spieler.
+<code>List&lt;User&gt;</code>{.java}                                 allUserData        Speichert die Daten aller Spieler.
+<code>HashMap&lt;String, HashMap&lt;String, String&gt;&gt;</code>{.java}   allExistingGames   Speichert alle bereits existierenden Spiele inklusive der Usernamen und Bluetooth Namen.
+<code>GameData</code>{.java}                                   gameData           Speichert die allgemeinen Daten für das Spiel.
+<code>User</code>{.java}                                       myUserData         Speichert die eigenen Spieler Daten.
+<code>Long</code>{.java}                                       startTime          Speichert, ab wann Mr. X gesucht werden kann.
+<code>ArrayList&lt;Long&gt; mrXStartTimes</code>{.java}              mrXStartTimes      Speichert die Zeiten, zu denen Mr. X auf der Karte auftaucht</p> <p>Für die Speicherung der allgemeinen Spieldaten, der Nachrichten und der
+Spieler, wurden eigene Klassen erstellt. Diese werden im folgenden kurz
+erörtert.</p> <h3 id="message"><a href="#message" class="header-anchor">#</a> Message</h3> <p>Die Klasse <code>Message.java</code>{.java} speichert für jede Nachricht die
+benötigten Daten. Diese sind:</p> <p><strong>Datentyp</strong> <strong>Name</strong> <strong>Beschreibung</strong></p> <hr> <p><code>String</code>{.java}   username    Speichert den Username des Spielers, der die Nachricht versendet hat.
+<code>int</code>{.java}      timestamp   Speichert die Zeit im timestamp-Format, zu der die Nachricht versendet wurde.
+<code>String</code>{.java}   message     Speichert den Inhalt der Nachricht.</p> <h3 id="gamedata"><a href="#gamedata" class="header-anchor">#</a> GameData</h3> <p>Die Klasse <code>GameData.java</code>{.java} speichert für das Spiel die benötigten
+Daten. Diese sind:</p> <p><strong>Datentyp</strong> <strong>Name</strong> <strong>Beschreibung</strong></p> <hr> <p><code>int</code>{.java}          gameId            Speichert die Game-ID.
+<code>Integer</code>{.java}      gameDuration      Speichert die Dauer des Spiels in Minuten.
+<code>Integer</code>{.java}      showMrXInterval   Speichert das Interval, in dem Mr. X auftaucht in Minuten.
+<code>GameStatus</code>{.java}   gameStatus        Speichert den GameStatus als Enumeration.
+<code>String</code>{.java}       mrX               Speichert den Username von Mr. X.</p> <h3 id="user"><a href="#user" class="header-anchor">#</a> User</h3> <p>Die Klasse <code>User.java</code>{.java} speichert für jeden Spieler die benötigten
+Daten. Diese sind:</p> <p><strong>Datentyp</strong> <strong>Name</strong> <strong>Beschreibung</strong></p> <hr> <p><code>double</code>{.java}    longitude             Speichert den Längengrad des Spielers.
+<code>double</code>{.java}    latitude              Speichert den Breitengrad des Spielers.
+<code>boolean</code>{.java}   iAmMrX                Speichert, ob der Spieler Mr. X ist.
+<code>boolean</code>{.java}   iAmTheGameMaster      Speichert, ob der Spieler GameMaster ist.
+<code>int</code>{.java}       userID                Speichert die User-ID des Spielers.
+<code>String</code>{.java}    bluetoothDeviceName   Speichert den Bluetooth Namen des Spielers.
+<code>String</code>{.java}    username              Speichert den Username des Spielers.</p> <h2 id="view"><a href="#view" class="header-anchor">#</a> View</h2> <p>Für das Spiel werden verschiedene Views/Activities benötigt. Diese sind:</p> <p><strong>Name der Activity</strong> <strong>Beschreibung</strong></p> <hr> <p><code>StartScreen.java</code>{.java}      Diese Activity wird beim Start der App geöffnet. Hier haben die Spieler die Möglichkeit entweder ein neues Spiel zu erstellen oder einem Spiel beizutreten.
+<code>JoiningScreen.java</code>{.java}    Sobald der Spieler ein Spiel erstellt hat oder einem beigetreten ist, wird diese Activity geöffnet. Hier sehen alle Spieler, wer alles mitspielt. Sobals ein neuer Spieler dem Spiel beitritt, wird der Name angezeigt. Für das Anzeigen der Spieler wird ein RecyclerView verwendet. Der Spieler, der das Spiel erstellt hat (GameMaster) hat in dieser Activity die Möglichkeit, das Spiel zu starten.
+<code>SettingsScreen.java</code>{.java}   Wenn der GameMaster das Spiel gestartet hat, werden ihm die Einstellungen angezeigt. Hier kann er einstellen, wie lange das SPiel dauert, wie oft Mr. X auftaucht und wer Mr. X ist.
+<code>LoadingScreen.java</code>{.java}    Diese Activity wird mehrfach verwendet und verwendet die Methode <code>getIntent().getExtras()</code>{.java}, um die Daten zu laden, welche angeben, was dargestellt werden soll. Diese Activity wird verwendet, wenn der GameMaster die Einstellungen festlegt, Mr. X sich versteckt und wenn das Spiel vorbei ist.
+<code>MapScreen.java</code>{.java}        Diese Activity zeigt die Karte und die Standorte aller Spieler. Über und unter der Karte befinden sich zwei Countdowns. Der obere Countdown zeigt an, wie lange das Spiel noch geht und der untere zeigt an, wann Mr. X das nächste mal auftaucht. In der linken oberen Ecke befindet sich ein Button, mit dem man den Chat öffnet und mit den anderen Spielern schreiben kann. Unter der Karte befindet sich zudem ein Slider, den man verwenden muss, wenn man Mr. X gefunden hat. Der Chat-Button und der Slider werden nur angezeigt, wenn man selber nicht Mr. X ist.
+<code>ChatScreen.java</code>{.java}       Diese Activity zeigt den Chat der Spieler an. Alle Nachrichten werden chronologisch mit Hilfe eines RecyclerViews angezeigt, wobei einkommende Nachrichten auf der linken Seite inklusive Name erscheinen und gesendete Nachrichten auf der rechten Seite.</p> <h2 id="control"><a href="#control" class="header-anchor">#</a> Control</h2> <p>Die App besitzt zwei Controller. Den <code>GameDataController.java</code>{.java}
+und den <code>FireBaseController.java</code>{.java}. Der
+<code>GameDataController.java</code>{.java} steuert die komplette Logik zwischen
+dem Model und dem View, die sich auf die lokal gespeicherten Daten
+bezieht und besitzt folgende Methoden:</p> <p><strong>Name der Methode</strong> <strong>Beschreibung</strong></p> <hr> <p><code>gameIdExistsAlready()</code>{.java}                Überprüft, ob eine Game-ID bereits existiert.
+<code>createNewGame()</code>{.java}                      Erstellt ein neues Spiel.
+<code>joinGame()</code>{.java}                           Tritt einem bereits vorhanden Spiel bei.
+<code>bluetoothDeviceNameExistsAlready()</code>{.java}   Überprüft, ob der Bluetooth Name bereits vergeben ist.
+<code>usernameExistsAlready()</code>{.java}              Überprüft, ob der Username bereits vergeben ist.
+<code>usernameAndGameIdAreSetCorrect()</code>{.java}     Überprüft, ob die Eingabe von dem Username und der Game-ID korrekt sind.
+<code>generateMrXStartTimes()</code>{.java}              Berechnet die Zeiten, zu denen Mr. X auftaucht.
+<code>getLastMrXStartTime()</code>{.java}                Gibt die Zeit zurück, zu der Mr. X das letzte Mal aufgetaucht ist.
+<code>updateUserLocation()</code>{.java}                 Ändert die Positionsdaten eines Spielers
+<code>getMrXUserId()</code>{.java}                       Gibt die User-ID von Mr. X zurück.
+<code>didIFoundMrX()</code>{.java}                       Überprüft, ob man Mr. X gefunden hat.
+<code>amIMrX()</code>{.java}                             Überprüft, ob man selber Mr. X ist.
+<code>getAllUser()</code>{.java}                         Gibt alle Spieler zurück.
+<code>getGameDuration()</code>{.java}                    Gibt die Dauer des Spiels zurück.
+<code>getShowMrXInterval()</code>{.java}                 Gibt das Zeitintervall zurück, in dem Mr. X auftaucht.
+<code>getAllMessages()</code>{.java}                     Gibt alle Nachrichten zurück.
+<code>getGameStatus()</code>{.java}                      Gibt den aktuellen GameStatus zurück.
+<code>getUserByName()</code>{.java}                      Gibt die Daten eines Spieler zurück über den Username.</p> <p>Der <code>FireBaseController.java</code>{.java} steuert die komplette Logik
+zwischen der Firebase-Datenbank und dem Model bzw. dem
+<code>GameDataController.java</code>{.java}.</p> <p><strong>Name der Methode</strong> <strong>Beschreibung</strong></p> <hr> <p><code>createNewGame()</code>{.java}         Lädt die Daten eines neu erstellten Spiels in die Datenbank.
+<code>joinGame()</code>{.java}              Lädt die Daten des Spielers in die Datenbank, wenn er einem Spiel beigetreten ist.
+<code>getAllExistingGames()</code>{.java}   Lädt alle bereits existierenden Game-IDs aus der Datenbank inklusive der Usernames und der Bluetooth Namen. Dadurch kann überprüft werden, ob man ein Spiel erstellen kann oder einem Spiel beitreten kann.
+<code>loadOtherPlayers()</code>{.java}      Sobald in der Datenbank ein neuer Spieler hinzugefügt wurde, wird diese Methode ausgelöst und die Daten werden lokal gespeichert. Dadurch können in der Activity <code>JoiningScreen.java</code>{.java} alle Spieler angezeigt werden.
+<code>settingDone()</code>{.java}           Speichert in der Datenbank, dass der GameMaster mit den Einstellungen fertig ist und das Spiel starten kann.
+<code>joiningDone()</code>{.java}           Speichert in der Datenbank, dass der GameMaster das Spiel gestartet hat.
+<code>loadNewGameStatus()</code>{.java}     Überprüft, ob sich der GameStatus verändert hat. Dadurch wissen die anderen Spieler, die nicht der GameMaster sind, wann das Spiel startet.
+<code>sendMessage()</code>{.java}           Beim versenden von Nachrichten, werden diese mit Hilfe dieser Methode in der Datenbank gespeichert.
+<code>loadMessages()</code>{.java}          Überprüft, ob ein Spieler eine Nachricht an die Datenbank gesendet hat. Wenn eine neue Nachricht ankommt, wird diese lokal hinzugefügt und kann in der Activity <code>ChatScreen.java</code>{.java} angezeigt werden.
+<code>updateMyLocation()</code>{.java}      Sendet die aktuelle Location an die Datenbank.</p> <p><img src="uml.pdf" alt="Model-View-Control Diagramm">{#fig:game width=&quot;\linewidth&quot;}</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">17.2.2023, 23:03:45</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/usage.html" class="prev">
+        Benutzung der App
+      </a></span> <span class="next"><a href="/docs/tests.html">
+        Tests
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.894dbaab.js" defer></script><script src="/assets/js/3.cef735bc.js" defer></script><script src="/assets/js/13.65feb753.js" defer></script>
+  </body>
+</html>
